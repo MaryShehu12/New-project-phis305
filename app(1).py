@@ -38,6 +38,6 @@ if uploaded_file is not None:
     y_column = st.selectbox("Select y_axis column", columns)
 
     if st.button("Generate Plot"):
-        st.bar_chart_chart(filtered_df.set_index(x_column)[y_column])
+        st.bar_chart(filtered_df.set_index(x_column)[y_column])
 else: 
     st.write("waiting on file upload...")
